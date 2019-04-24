@@ -20,7 +20,7 @@ _Deutsch_
 
 Falls Du noch nicht VIP 12 bist, hilft Dir das Skript, Geschenke zu öffnen.
 1. Lade das Skript auf Deinen Desktop herunter
-2. Installiere AutoIt von hier: https://www.autoitscript.com/site/autoit/downloads/ (Insalliere die "Full Installation")
+2. Installiere AutoIt von hier: https://www.autoitscript.com/site/autoit/downloads/ (Installiere die "Full Installation")
 3. Öffne BlueStacks, starte Lords Mobile
 4. Geh zum Gildengeschenke-Dialog in Lords
 5. Doppelklick geschenke.au3, um das Skript auszuführen
