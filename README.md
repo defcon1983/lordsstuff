@@ -16,7 +16,7 @@ If you're not VIP 12 yet, this automatically opens all guild presents for you.
 6. Enter the number of presents, press Enter
 7. The script remote-controls the mouse and does the clicking for you.
 
-_German_
+_Deutsch_
 
 Falls Du noch nicht VIP 12 bist, hilft Dir das Skript, Geschenke zu öffnen.
 1. Lade das Skript auf Deinen Desktop herunter
