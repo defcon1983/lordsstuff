@@ -3,7 +3,7 @@ AutoIt v3 helpers for Lords Mobile running in BlueStacks
 
 Currently only German dialogues
 
-*geschenke.au3*
+**geschenke.au3**
 
 _English_
 
