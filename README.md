@@ -9,7 +9,7 @@ _English_
 
 If you're not VIP 12 yet, this automatically opens all guild presents for you.
 1. Put the script on your desktop
-2. Install AutoIt v3 from here: https://www.autoitscript.com/site/autoit/downloads/ (Get the full version)
+2. Install AutoIt v3 from here: https://www.autoitscript.com/site/autoit/downloads/ (Get the "Full Installation")
 3. Open BlueStacks, start Lords Mobile
 4. Go to the guild presents dialogue in Lords
 5. Doubleclick geschenke.au3 to execute it
@@ -20,7 +20,7 @@ _Deutsch_
 
 Falls Du noch nicht VIP 12 bist, hilft Dir das Skript, Geschenke zu öffnen.
 1. Lade das Skript auf Deinen Desktop herunter
-2. Installiere AutoIt von dieser Adresse: https://www.autoitscript.com/site/autoit/downloads/ (Insalliere die "Full Version")
+2. Installiere AutoIt von dieser Adresse: https://www.autoitscript.com/site/autoit/downloads/ (Insalliere die "Full Installation")
 3. Öffne BlueStacks, starte Lords Mobile
 4. Geh zum Gildengeschenke-Dialog in Lords
 5. Doppelklick geschenke.au3, um das Skript auszuführen
