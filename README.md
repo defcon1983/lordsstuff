@@ -55,3 +55,32 @@ Falls Du noch nicht VIP 12 bist, hilft Dir das Skript, Geschenke zu öffnen. Es 
 7. Das Skript steuert Deine Maus fern und erledigt das Klicken für Dich
 8. Es gibt einen Überbleibsel-Screenshot auf dem Desktop, den kannst Du ruhig von Hand löschen.
 
+**hilfeboost.au3**
+
+_English_
+
+If others in your guild need to give lots of help, you can use a low-levelled building, request help and cancel it continuously.
+1. Put the script on your desktop
+2. Install AutoIt v3 from here: https://www.autoitscript.com/site/autoit/downloads/ (Get the "Full Installation")
+3. Open BlueStacks, start Lords Mobile
+4. **Make sure you're not currently building something**
+5. Start the script
+6. Enter the number of help requests you want to make, press Enter
+7. Move the mouse over a low-levelled building (8+, like a farm building), where you can't finish levelling it up for free
+8. Press Enter
+9. The loop is: Improve building; request help; wait 3 seconds; cancel building improvement; repeat
+10. Tell the guy in the guild who has the quest to spam "Give help". Done!
+
+_Deutsch_
+
+Falls andere in Deiner Gilde eine Menge Hilfe geben müssen, kannst Du ein niedrig geleveltes Gebäude benutzen, Hilfe erbeten und den Bauprozess abbrechen, immer wieder.
+1. Lade das Skript auf Deinen Desktop herunter
+2. Installiere AutoIt von hier: https://www.autoitscript.com/site/autoit/downloads/ (Installiere die "Full Installation")
+3. Öffne BlueStacks, starte Lords Mobile
+4. **Stelle sicher, dass Du nicht gerade etwas baust**
+5. Starte das Skript
+6. Gib die Anzahl der Hilfeanfragen ein, die Du machen willst, drück Enter
+7. Beweg die Maus über ein niedrig geleveltes Gebäude (8+, zum Beispiel eine Farm), das Du nicht umsonst leveln kannst
+8. Drück Enter
+9. Die Schleife: Gebäude verbessern; Hilfe erbeten; 3 Sekunden warten; Verbesserung abbrechen; wieder von vorne
+10. Sag dem Freund in der Gilde, der die Quest hat, dass er "Helfen" spammen soll. Fertig!
