@@ -84,3 +84,25 @@ Falls andere in Deiner Gilde eine Menge Hilfe geben müssen, kannst Du ein niedr
 8. Drück Enter
 9. Die Schleife: Gebäude verbessern; Hilfe erbeten; 3 Sekunden warten; Verbesserung abbrechen; wieder von vorne
 10. Sag dem Freund in der Gilde, der die Quest hat, dass er "Helfen" spammen soll. Fertig!
+
+**quest.au3**
+
+_English_
+
+Opens admin or guild quest scrolls automatically.
+1. Put the script on your desktop
+2. Install AutoIt v3 from here: https://www.autoitscript.com/site/autoit/downloads/ (Get the "Full Installation")
+3. Open BlueStacks, start Lords Mobile
+4. Open the quests dialog, go to either the admin quests or the guild quests tab
+5. Start the script
+6. The scrolls in the current tab (up to 9 of them) are automatically opened for you.
+
+_Deutsch_
+
+Öffnet Admin- oder Gildenquestrollen automatisch
+1. Lade das Skript auf Deinen Desktop herunter
+2. Installiere AutoIt von hier: https://www.autoitscript.com/site/autoit/downloads/ (Installiere die "Full Installation")
+3. Öffne BlueStacks, starte Lords Mobile
+4. Öffne den Quests-Dialog, geh entweder zu dem Admin-Quests- oder dem Gildenquests-Tab
+5. Starte das Skript
+6. Die Rollen im aktuellen Tab (bis zu 9) werden automatisch für Dich geöffnet.
