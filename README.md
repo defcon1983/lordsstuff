@@ -3,7 +3,14 @@ AutoIt v3 helpers for Lords Mobile running in BlueStacks
 
 Currently only German dialogues
 
-**geschenke.au3**
+Instructions:
+1. [geschenke](#geschenke)
+2. [geschenke-ocr](#geschenke-ocr)
+3. [hilfeboost](#hilfeboost)
+4. [quest](#quest)
+
+
+##geschenke
 
 _English_
 
@@ -27,7 +34,9 @@ Falls Du noch nicht VIP 12 bist, hilft Dir das Skript, Geschenke zu öffnen.
 6. Gib die Anzahl der zu öffnenden Geschenke ein, drück Enter
 7. Das Skript steuert Deine Maus fern und erledigt das Klicken für Dich.
 
-**geschenke-ocr.au3 (Experimental, but cool)**
+##geschenke-ocr 
+
+**(Experimental, but cool)**
 
 _English_
 
@@ -55,7 +64,7 @@ Falls Du noch nicht VIP 12 bist, hilft Dir das Skript, Geschenke zu öffnen. Es 
 7. Das Skript steuert Deine Maus fern und erledigt das Klicken für Dich
 8. Es gibt einen Überbleibsel-Screenshot auf dem Desktop, den kannst Du ruhig von Hand löschen.
 
-**hilfeboost.au3**
+##hilfeboost
 
 _English_
 
@@ -85,7 +94,7 @@ Falls andere in Deiner Gilde eine Menge Hilfe geben müssen, kannst Du ein niedr
 9. Die Schleife: Gebäude verbessern; Hilfe erbeten; 3 Sekunden warten; Verbesserung abbrechen; wieder von vorne
 10. Sag dem Freund in der Gilde, der die Quest hat, dass er "Helfen" spammen soll. Fertig!
 
-**quest.au3**
+##quest.au3
 
 _English_
 
