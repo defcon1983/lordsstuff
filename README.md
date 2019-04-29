@@ -108,7 +108,7 @@ Opens admin or guild quest scrolls automatically.
 
 _Deutsch_
 
-Öffnet Admin- oder Gildenquestrollen automatisch
+Öffnet Admin- oder Gildenquestrollen automatisch.
 1. Lade das Skript auf Deinen Desktop herunter
 2. Installiere AutoIt von hier: https://www.autoitscript.com/site/autoit/downloads/ (Installiere die "Full Installation")
 3. Öffne BlueStacks, starte Lords Mobile
