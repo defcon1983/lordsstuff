@@ -3,7 +3,8 @@ AutoIt v3 helpers for Lords Mobile running in BlueStacks
 
 Currently only German dialogues
 
-Instructions:
+## Instructions
+
 1. [geschenke](#geschenke)
 2. [geschenke-ocr](#geschenke-ocr)
 3. [hilfeboost](#hilfeboost)
