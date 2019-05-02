@@ -1,5 +1,16 @@
+#include <GUIConstants.au3>
+
+Dim $dbg
+GuiCreate ("",500,75,0,0,$WS_POPUP+$WS_EX_TOPMOST)
+GuiSetState (@SW_SHOW)
+Local $dbgLabel = GuiCtrlCreateLabel ("Hilfe-Boost: Infos",10,10, 500, 200)
+Func Debug($dbg)
+     GuiCtrlSetData($dbgLabel, $dbg)
+EndFunc
+
 Local $origin = MouseGetPos()
 Local $pcount = InputBox("Anzahl Hilfe", "Wie oft willst Du Hilfe erfragen?", "120")
+Debug("Hilfe-Boost: " & $pcount & " Runden")
 MsgBox(0, "Hilfe-Boost", "Bewege die Maus über das Gebäude, dann drück Enter")
 Local $building = MouseGetPos()
 
@@ -41,8 +52,14 @@ While $run < $pcount
 	Sleep(300)
 	mouseclickat($yes)
 	Sleep(900)
-    $run = $run + 1
+	$run = $run + 1
+	Local $suff = ""
+	If ($pcount - $run) <> 1 Then
+		$suff = "n"
+	EndIf
+	Debug("Noch " & ($pcount - $run) & " Runde" & $suff & "...")
 WEnd
+Debug("Fertig!")
 ; Move back to the icon
 MouseClick("left",$origin[0],$origin[1],1)
 
