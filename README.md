@@ -12,8 +12,6 @@ Currently only German dialogues
 
 ## geschenke-ocr 
 
-**(Experimental, but cool)**
-
 _English_
 
 If you're not VIP 12 yet, this automatically opens all guild presents for you. It recognizes the number of presents with OCR.
