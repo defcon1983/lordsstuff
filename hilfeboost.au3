@@ -56,7 +56,6 @@ Local $yes = [0.575,0.532]
 ; Clicks at a specified relative BlueStacks coordinate
 Func mouseclickat($arr)
 	Local $p = GetPlayArea()
-	Debug("Click " & Int($arr[0] * $p[4]) & " " & Int($arr[1] * $p[5]))
 	MouseClick("left", $p[0] + Int($arr[0] * $p[4]), $p[1] + Int($arr[1] * $p[5]), 1)
 EndFunc
 
