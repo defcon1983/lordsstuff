@@ -22,17 +22,16 @@ Local $xend = $xcoord + (0.7 * $ws[0])
 Local $yend = $ycoord + (0.278 * $ytotal)
 
 Local $ocr_filename = @DesktopDir & "\lordsmobile_presents_ocr"
-Local $img_filename = $ocr_filename & ".bmp"
 Local $ocr_filename_and_ext = $ocr_filename & ".txt"
 Local $ocr_image = $ocr_filename & "_bw.bmp"
 
-_ScreenCapture_Capture ($img_filename,$xoffset, $yoffset, $xend, $yend)
+Local $hScreenshot = _ScreenCapture_Capture ("",$xoffset, $yoffset, $xend, $yend)
 
 _GDIPlus_Startup()
 Local $hIA = _GDIPlus_ImageAttributesCreate()
 Local $tColorMatrix = _GDIPlus_ColorMatrixCreateNegative()
 _GDIPlus_ImageAttributesSetColorMatrix($hIA, 0, True, $tColorMatrix)
-Local $hBitmap = _GDIPlus_BitmapCreateFromFile($img_filename)
+Local $hBitmap = _GDIPlus_BitmapCreateFromHBITMAP($hScreenshot)
 Local $iW = _GDIPlus_ImageGetWidth($hBitmap)
 Local $iH = _GDIPlus_ImageGetHeight($hBitmap)
 Local $hBMP_2bpp = _GDIPlus_BitmapCloneArea($hBitmap, 0 ,0 , $iW, $iH, $GDIP_PXF01INDEXED)
@@ -47,7 +46,6 @@ Local $iPID = Run(@ComSpec & " /C " & "tesseract.exe """ & $ocr_image & """ """ 
 ProcessWaitClose($iPID)
 
 FileDelete($ocr_image)
-FileDelete($img_filename)
 Local $string= FileReadLine($ocr_filename_and_ext,1)
 Local $runs = StringSplit($string, " /")[2] / 5
 FileDelete($ocr_filename_and_ext)
