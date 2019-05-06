@@ -50,21 +50,43 @@ Local $string= FileReadLine($ocr_filename_and_ext,1)
 Local $runs = StringSplit($string, " /")[2] / 5
 FileDelete($ocr_filename_and_ext)
 
-$xcoord = $wp[0]
-$ycoord = $wp[1]
+; Returns absolute coordinates of the BlueStacks play area as an array
+; Values: [x-start y-start x-end y-end width height]
+Func GetPlayArea()
+	Local $play_area = ControlGetPos(WinGetHandle("BlueStacks"), "", "_ctl.Window")
+	Local $window_position = WinGetPos("BlueStacks","")
+	Local $width = $play_area[2]
+	Local $height = $play_area[3]
+	; Compute absolute coordinates
+	Local $xs = $window_position[0] + $play_area[0]
+	Local $xe = $xs + $width
+	Local $ys = $window_position[1] + $play_area[1]
+	Local $ye = $ys + $height
+	Local $result = [$xs, $ys, $xe, $ye, $width, $height]
+	Return $result
+EndFunc
 
-; Compute the button offsets
-$xoffset = $xcoord + (0.746 * $ws[0])
+Local $g5 = [0.7849,0.9588]
+Local $g4 = [0.7849,0.8028]
+Local $g3 = [0.7849,0.6461]
+Local $g2 = [0.7849,0.5035]
+Local $g1 = [0.7849,0.3468]
+Local $gd = [0.7701,0.1989]
 
-Local $yvars = [(587 / 667) * $ws[1],(502 / 667) * $ws[1],(414 / 667) * $ws[1],(324 / 667) * $ws[1],(245 / 667) * $ws[1],(159 / 667) * $ws[1]]
+; Clicks at a specified relative BlueStacks coordinate
+Func mouseclickat($arr, $speed)
+	Local $p = GetPlayArea()
+	MouseClick("left", $p[0] + Int($arr[0] * $p[4]), $p[1] + Int($arr[1] * $p[5]), 1, $speed)
+EndFunc
+
 Local $run = 0
 While $run < $runs
-	MouseClick("left",$xoffset,    $ycoord + $yvars[0],1) ; 587
-	MouseClick("left",$xoffset - 3,$ycoord + $yvars[1],1,2) ; 502
-	MouseClick("left",$xoffset + 7,$ycoord + $yvars[2],1,2) ; 414
-	MouseClick("left",$xoffset - 3,$ycoord + $yvars[3],1,2) ; 324
-	MouseClick("left",$xoffset + 2,$ycoord + $yvars[4],1,2) ; 245
-	MouseClick("left",$xoffset - 6,$ycoord + $yvars[5],1,2) ; 159
+	mouseclickat($g5, 10)
+	mouseclickat($g4, 2)
+	mouseclickat($g3, 2)
+	mouseclickat($g2, 2)
+	mouseclickat($g1, 2)
+	mouseclickat($gd, 2)
     $run = $run + 1
 WEnd
 
